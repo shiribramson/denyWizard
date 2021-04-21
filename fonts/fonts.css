@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'almoni-400';
+    src: url('../fonts/almoni-400/almoni-400.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/almoni-400/almoni-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/almoni-400/almoni-400.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/almoni-400/almoni-400.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/almoni-400/almoni-400.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/almoni-400/almoni-400.svg#svgalmoni-400') format('svg'); /* Legacy iOS */
+  }
+
+
+
+  @font-face {
+    font-family: 'almoni-700';
+    src: url('../fonts/almoni-700/almoni-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/almoni-700/almoni-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/almoni-700/almoni-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/almoni-700/almoni-700.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/almoni-700/almoni-700.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/almoni-700/almoni-700.svg#svgalmoni-700') format('svg'); /* Legacy iOS */
+  }

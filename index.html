@@ -1,101 +1,995 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<title>Shiri Bramson Test - Herolo </title>
-<link rel="stylesheet" href="https://use.typekit.net/cly3jnl.css">
-<link rel="stylesheet" type="text/css" href="scss/style.css">
+  <title>Deny Wizard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/4.3.1/dist/css/bootstrap.min.css">
+  <script src="jquery/3.3.1/jquery.min.js"></script>
+  <script src="bootstrap/4.3.1/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
 </head>
-	<body>
-		<div class="mainWrapper">
-		<div></div>
-			<div class="subWrapper">
-				<div class="searchWrapper">
-					<div></div>	
-					<div>
-						<input type="search" name="search" id="search"  placeholder='Search another city'>		
-					</div>
-				</div> 
-				<div class="arrowDesktop">
-					<div>
-						<img src="img/arrow.svg" class="arrowImg"/>
-					</div>	
-				</div>
-				<div class="mainBoxWrapper">
-					<div></div>
-					<div class="boxsWrapper">
-						<div class="currentBox">
-							<div class="topPart">
-								<div class="city">
-									new york
-								</div>	
-								<div class="selectedDay">
-									today
-								</div>
-							</div>
-							<div class="bottomPart">
-								<div class="degree">
-									23°
-								</div>
-								<div class="status">
-									sunny
-								</div> 
-							</div>
-						</div>	
-						<div class="dayBox">
-							<div class="day">
-								monday
-							</div>
-							<div class="icon flex-center">
-								<img src="img/sunny.svg" class="sunnyImg"/>
-							</div>
-							<div class="degree">
-								26°/19°
-							</div>
-							<div class="status">
-								sunny
-							</div>
-						</div>
-						<div class="dayBox">
-							<div class="day">
-								tuesday
-							</div>
-							<div class="icon flex-center">
-								<img src="img/rain.svg" class="rainImg"/>
-							</div>
-							<div class="degree">
-								20°/12°
-							</div>
-							<div class="status">
-								rain
-							</div>
-						</div>
-							<div class="dayBox">
-								<div class="day">
-									wednesday
-								</div>
-								<div class="icon flex-center">
-									<img src="img/cloudy.svg" class="cloudyImg"/>
-								</div>
-								<div class="degree">
-									14°/6°
-								</div>
-								<div class="status">
-									cloudy
-								</div>
-							</div>
-					</div>
-							<div></div>
-				</div>
-				<div class="arrowMobile">
-					<div></div>
-					<div>
-						<img src="img/arrow.svg" class="arrowImg"/>
-					</div>	
-					<div></div>
-				</div>
-			</div>
-		</div>
-	</body>
+
+<body>
+  <div class="deny-transaction">
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-12 col-sm-12 col-12 mr-auto ml-auto">
+            <div class="row">
+              <div class="col-lg-3 col-6 ">
+                <span class="location-title">
+                  סכום
+                </span>
+                <span class="date-title">
+                  1,000,000,0000
+                </span>
+              </div>
+              <div class="col-lg-3 col-6">
+                <span class="location-title">
+                  תאריך העסקה
+                </span>
+                <span class="date-title">
+                  14.02.2019
+                </span>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <span class="location-title">
+                  ענף
+                </span>
+                <span class="date-title">
+                  בתי מרקחת
+                </span>
+              </div>
+
+              <div class="col-lg-3 d-none d-lg-block">
+                  <span class="location-title">
+                   מספר עסקאות
+                  </span>
+                  <span class="date-title">
+                   4
+                  </span>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots-navigation">
+      <ul>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-a"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-b"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-c"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-d"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-e"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-f"></i>
+          </div>
+        </li>
+        <li>
+          <div class="circle-wrapper">
+            <i class="fa fa-circle circle-g"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="main-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 col-md-12 col-sm-12 col-12 mr-auto ml-auto">
+
+            <h1 class="main-title">
+              מה הבעיה עם העסקה?
+            </h1>
+
+            <div class="sub-sticky-b">
+              <div class="grid-tab">
+                <div class="tab-block" id="tab-block">
+                  <ul class="tab-mnu">
+                    <li class="clicker-a">
+                      <div class="tabs-info">
+                        <div class="icon">
+                          <img src="img/icon1.png" class="img-fluid" alt="לא ביצעתי את העסקה הזו"/>
+                        </div>
+                        <div class="text">
+                          לא ביצעתי את העסקה הזו
+                        </div>
+                    </li>
+                    <li class="clicker-b">
+                      <div class="tabs-info">
+                        <div class="icon">
+                          <img src="img/icon3.png" class="img-fluid" alt="בוצעה על ידי אך לא קיבלתי את המוצר"/>
+                        </div>
+                        <div class="text">
+                          בוצעה על ידי אך לא קיבלתי את המוצר
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clicker-c">
+                      <div class="tabs-info">
+                        <div class="icon">
+                          <img src="img/icon1.png" class="img-fluid" alt="בוצעה בתנאים שונים"/>
+                        </div>
+                        <div class="text">
+                          בוצעה בתנאים שונים
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clicker-d">
+                      <div class="tabs-info">
+                        <div class="icon">
+                          <img src="img/icon3.png" class="img-fluid" alt="שולמה באמצעי תשלום אחר"/>
+                        </div>
+                        <div class="text">
+                          שולמה באמצעי תשלום אחר
+                        </div>
+                      </div>
+                    </li>
+                    <li class="clicker-e">
+                      <div class="tabs-info">
+                        <div class="icon">
+                          <img src="img/icon1.png" class="img-fluid" alt="שונה מהסכום שאשרתי"/>
+                        </div>
+                        <div class="text">
+                          שונה מהסכום שאשרתי
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+
+                  <div class="tab-cont slide-in-up">
+                    <div class="tab-pane">
+                      <div class="row">
+                        <div class="col-12">
+                          <h3 class="tab-sub-title">
+                            חשוב לדעת!
+                            <p class="sub-text">
+                              לא ניתן להכחיש עסקה שבוצעה על ידי בן משפחה מקרבה ראשונה,
+                              ממליצים לוודא זאת לפני בשביל להמנע מעמלות מיותרות
+                            </p>
+                            <a class="btn btn-next next-level-b" href="#">אני רוצה להמשיך</a>
+                            <a class="btn btn-prev" a href="#" data-toggle="modal" data-target="#myModal">תודה אבדוק</a>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane">
+                      <div class="row">
+                        <div class="col-12">
+                          <h3 class="tab-sub-title">
+                              בוצעה על ידי אך לא קיבלתי את המוצר
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane">
+                      <div class="row">
+                        <div class="col-12">
+                          <h3 class="tab-sub-title">
+                              בוצעה בתנאים שונים
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="tab-pane">
+                      <div class="row">
+                        <div class="col-12">
+                          <h3 class="tab-sub-title">
+                              שולמה באמצעי תשלום אחר
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane">
+                      <div class="row">
+                        <div class="col-12">
+                          <h3 class="tab-sub-title">
+                              שונה מהסכום שאשרתי
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-sticky-c padding-top top">
+              <div class="part-b relative text-center padding-20">
+                <video width="" height="" autoplay loop>
+                  <source src="video/lamp.mp4" type="video/mp4">
+                </video>
+
+                <h3 class="tab-sub-title">
+                  חסימת כרטיס בעסקאות חו"ל
+                  <p class="sub-text wobble animated">
+                    עם סיום התהליך כרטיסך ייחסם.
+                    האם ברצונך להמשיך?
+                  </p>
+                  <a class="btn btn-next next-level-c" href="#">המשך</a>
+                  <a class="btn btn-prev" a="" href="#" data-toggle="modal" data-target="#myModal">ויתרתי, תודה</a>
+                </h3>
+              </div>
+            </div>
+            <div class="sub-sticky-d padding-top top">
+              <div class="part-c relative text-center padding-20">
+                <h3 class="tab-sub-title">
+                  תהליך הכחשת עסקה
+                  <p class="sub-text">
+                    מצאנו זיכויים שנתקבלו מבית העסק, יכול להיות שזה בגין פנייה שפנית אלינו?
+                  </p>
+                </h3>
+                <table class="table" dir="rtl">
+                  <thead class="">
+                    <tr class="thead-color">
+                      <th class="name checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית עסק
+                          </span>
+
+                          <input type="checkbox" class="all-select">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </th>
+                      <th class="name">תאריך</th>
+                      <th class="adress">שעה</th>
+                      <th class="number">סכום</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+                    <tr>
+
+
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+                    <tr>
+
+
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="sub-text">
+                  האם ברצונך להמשיך?
+                </div>
+                <a class="btn btn-next next-level-d" href="#">המשך</a>
+                <a class="btn btn-prev" a="" href="#" data-toggle="modal" data-target="#myModal">ויתרתי, תודה</a>
+              </div>
+            </div>
+
+
+            <div class="sub-sticky-e padding-top top">
+              <div class="part-d relative text-center padding-20">
+                <!-- <video width="" height="" autoplay loop>
+                  <source src="video/headphones.mp4" type="video/mp4">
+                </video> -->
+                <img src="img/headphones.svg" class="img-fluid" alt="האם פנית לבית העסק לבירור"/>
+                <h3 class="tab-sub-title">
+                  האם פנית לבית העסק לבירור?
+                </h3>
+                <a class="btn btn-next yes" href="#">כן</a>
+                <a class="btn btn-prev no" a="" href="#" data-toggle="modal" data-target="#myModal">לא</a>
+                <div class="part-d-none">
+                  <p class="area-title">
+                    האם נמסרו לך פרטים אודות הגורם שביצע את העסקה?
+                  </p>
+                  <textarea class="form-control textarea" id="valid-1"></textarea>
+                  <span class="error-1"></span>
+                  <p class="area-title">
+                    לפרט מה נמסר לו מבית העסק
+                  </p>
+                  <textarea class="form-control textarea" id="valid-2"></textarea>
+                  <span class="error-2"></span>
+                  <a class="btn btn-next next-level-e" href="#">המשך</a>
+                  <a class="btn btn-prev no" a="" href="#" data-toggle="modal" data-target="#myModal">ויתרתי, תודה</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-sticky-f padding-top top">
+              <div class="part-e relative text-center padding-20">
+                <h3 class="tab-sub-title">
+                  תהליך הכחשת עסקה
+                </h3>
+                <p class="sub-text">
+                  מצאנו חיובים נוספים מבית עסק זה.
+                  האם להכחיש גם אותם?
+                </p>
+                <a class="btn btn-next next-level-f" href="#">כן</a>
+                <a class="btn btn-prev" a="" href="#" data-toggle="modal" data-target="#myModal">לא</a>
+                <table class="table" dir="rtl">
+                  <thead class="">
+                    <tr class="thead-color">
+                      <th class="name checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית עסק
+                          </span>
+
+                          <input type="checkbox" class="all-select">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </th>
+                      <th class="name">תאריך</th>
+                      <th class="adress">שעה</th>
+                      <th class="number">סכום</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="checbox-data">
+                        <label class="container-checkbox">
+                          <span class="date">
+                            בית מרקחת אבן חן
+                          </span>
+                          <input type="checkbox">
+                          <!--checked="checked"-->
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        22-02-2019
+                      </td>
+                      <td class="credit-data">
+                        <span>5710</span>
+                      </td>
+                      <td class="money-data">
+                        22:22
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="part-e-none">
+                  <a class="btn btn-next next-level-g" href="#">המשך</a>
+                  <a class="btn btn-prev" a="" href="#" data-toggle="modal" data-target="#myModal">ויתרתי, תודה!</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="sub-sticky-g padding-top top">
+              <div class="part-f relative text-center padding-20">
+                <video width="" height="" autoplay loop>
+                  <source src="video/signature.mp4" type="video/mp4">
+                </video>
+                <h3 class="tab-sub-title">
+                  תהליך הכחשת עסקה
+                </h3>
+                <p class="sub-text">
+                  <textarea class="form-control textarea" id="valid-3"></textarea>
+                  <span class="error-3"></span>
+                  <div class="sub-text-title">
+                    טקסט הסבר טופס הסברה דיגיטלי
+                  </div>
+                </p>
+                <a class="btn btn-next next-level-h" href="#">סיימתי ואני רוצה לחתום</a>
+                <a class="btn btn-prev" a="" href="#" data-toggle="modal" data-target="#myModal">ויתרתי,תודה</a>
+              </div>
+            </div>
+
+
+            <div class="sub-sticky-h padding-top top">
+              <div class="part-g relative text-center padding-20">
+                <img src="img/airplain.svg" alt="איזה כיף סיימנו"/>
+                <h3 class="tab-sub-title">
+                  איזה כיף סיימנו!
+                </h3>
+                <p class="sub-text p-1">
+                  התחלנו בטיפול, נזכה את כרטיסך בגין העסקאות אותן ברצונך להכחיש.
+                  עד לגמר הבירור, כרטיסך ייחסם, אנו נדאג להנפיק לך כרטיס תחליפי ולהעביר אליו את
+                  כל החיובים הקיימים בו.
+                </p>
+                <p class="sub-text p-2">
+                  כרטיסך יישלח לכתובת הרימון 17 תל אביב
+                  יכול להיות שיהיו לנו כמה שאלות, נוכל ליצור איתך קשר במספר 052-7644544
+                  האם אלו הפרטים העדכניים שלך?
+                </p>
+                <span class="update-details">
+                  ניתן לעדכן אותם כאן
+                </span>
+                <a class="btn btn-next" href="#" onClick="window.location.reload()">קח אותי חזרה לפירוט החיובים</a>
+                <p class="sub-text p-3">
+                  אם אתה נמצא כרגע בחו"ל וצריך את הכרטיס שעומד להחסם, אנו ממליצים לפנות למוקד אישורים וחסימות כדי למצוא
+                  פתרון
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="img/bad.png" class="img-fluid" alt="חזרה לאחור תמחק את כל מה שעשית עד כה"/>
+              <h2>
+                רגע!
+              </h2>
+              <h3>
+                חזרה לאחור תמחק את כל מה שעשית עד כה.
+              </h3>
+              <a class="btn btn-next" href="#" class="close" data-dismiss="modal">אמשיך בתהליך</a>
+              <a class="btn btn-prev" a="" href="#" onClick="window.location.reload()">חזרה לפירוט חיובים</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.clicker-a').click(function () {
+        $(".dots-navigation").css("display", "block");
+        $(".dots-navigation").addClass("fade-in");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".tab-cont").addClass("none");
+      $('.tab-mnu li').click(function (e) {
+        $(".tab-cont").addClass("block");
+        $(".tab-mnu li").css("opacity", "0.5");
+        $(".active").css("opacity", "1");
+        if ($(window).width() > 991) {
+          $(".main-sticky").animate({
+            top: '0px'
+          }, ['fast'], ['easing']);
+        } else {
+          $(".main-sticky").animate({
+            top: '65px'
+          }, ['fast'], ['easing']);
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-c").addClass("none");
+      $(".next-level-b").click(function () {
+        $(".sub-sticky-b").animate({
+          top: '-150vh'
+        }, ['fast'], ['easing']);
+        $(".sub-sticky-c").addClass("block");
+        $(".sub-sticky-c").addClass("slide-in-down");
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-d").addClass("none");
+      $(".next-level-c").click(function () {
+        $(".sub-sticky-c").animate({
+          top: '-250vh'
+        }, ['fast'], ['easing']);
+        $(".sub-sticky-d").addClass("block");
+        $(".sub-sticky-d").addClass("slide-in-down");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-e").addClass("none");
+      $(".next-level-d").click(function () {
+        $(".sub-sticky-d").animate({
+          top: '-350vh'
+        }, ['fast'], ['easing']);
+        $(".sub-sticky-e").addClass("block");
+        $(".sub-sticky-e").addClass("slide-in-down");
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".part-d-none").addClass("none");
+      $(".yes").click(function () {
+        $(".part-d-none").addClass("block");
+        $(".part-d-none").addClass("fade-in");
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-f").addClass("none");
+      $(".next-level-e").click(function () {
+        if ($("#valid-1").val() != '' && $("#valid-2").val() != '') {
+          $(".sub-sticky-e").animate({
+            top: '-450vh'
+          }, ['fast'], ['easing']);
+          $(".sub-sticky-f").addClass("block");
+          $(".sub-sticky-f").addClass("slide-in-down");
+        } else {
+          $(".error-1").html("שדה זה הוא שדה חובה");
+          $(".error-2").html("וגם זה");
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".part-e-none").addClass("none");
+      $(".next-level-f").click(function () {
+        $(".part-e-none").addClass("block");
+        $("part-e-none").addClass("fade-in");
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-g").addClass("none");
+      $(".next-level-g").click(function () {
+        $(".sub-sticky-f").animate({
+          top: '-550vh'
+        }, ['fast'], ['easing']);
+        $(".sub-sticky-g").addClass("block");
+        $(".sub-sticky-g").addClass("slide-in-down");
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".sub-sticky-h").addClass("none");
+      $(".next-level-h").click(function () {
+        if ($("#valid-3").val() != '') {
+          $(".sub-sticky-g").animate({
+            top: '-650vh'
+          }, ['fast'], ['easing']);
+          $(".sub-sticky-h").addClass("block");
+          $(".sub-sticky-h").addClass("slide-in-down");
+        } else {
+          $(".error-3").html("לא חתמת ולכן לא ניתן להתקדם");
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".clicker-a").click(function () {
+        $(".circle-a").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-b").click(function () {
+        $(".circle-a").css("font-size", "1.2rem");
+        $(".circle-b").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-c").click(function () {
+        $(".circle-b").css("font-size", "1.2rem");
+        $(".circle-c").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-d").click(function () {
+        $(".circle-c").css("font-size", "1.2rem");
+        $(".circle-d").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-e").click(function () {
+        $(".circle-d").css("font-size", "1.2rem");
+        $(".circle-e").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-g").click(function () {
+        $(".circle-e").css("font-size", "1.2rem");
+        $(".circle-f").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".next-level-h").click(function () {
+        $(".circle-f").css("font-size", "1.2rem");
+        $(".circle-g").css({
+          "color": "#009CA2",
+          "font-size": "1.8rem"
+        });
+      });
+    });
+  </script>
+</body>
 </html>

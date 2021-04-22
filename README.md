@@ -1,2 +1,2 @@
-# Deny Wizard
-web appliaction - Go to box number 5 to see how the app works. 
+# Deny Wizard 
+Transaction Denial Process - Click on the last cube to see the animation.
